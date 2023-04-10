@@ -3,7 +3,7 @@
 # YOUTUBE_DL=/usr/local/bin/youtube-dl
 YOUTUBE_DL=./youtube-dl
 DOWNLOAD_PATH=$HOME/Downloads
-FILENAME=$(date +%m%d%Y)
+FILENAME=$(date +%d%m%Y)
 
 # Prompt for the YouTube Video ID
 echo -n "Enter the YouTube Video ID: "
