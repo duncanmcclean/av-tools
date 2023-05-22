@@ -16,4 +16,5 @@ if [[ $VIDEO_ID == https://www.youtube.com/watch?v=* || $VIDEO_ID == https://you
 fi
 
 # Download an mp4 file of the sermon (highest quality)
-python3 $YOUTUBE_DL -f bestvideo+bestaudio -o "$DOWNLOAD_PATH/$FILENAME.%(ext)s" https://www.youtube.com/watch?v=$VIDEO_ID
+# python3 $YOUTUBE_DL -f bestvideo+bestaudio -o "$DOWNLOAD_PATH/$FILENAME.%(ext)s" https://www.youtube.com/watch?v=$VIDEO_ID
+python3 $YOUTUBE_DL -f bestvideo+bestaudio -o "$DOWNLOAD_PATH/%(id)s.%(ext)s" https://www.youtube.com/watch?v=$VIDEO_ID
